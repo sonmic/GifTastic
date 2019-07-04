@@ -1,0 +1,55 @@
+/* .jumbotron {
+    background-image: url('../images/office3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.jumbotron {
+    /* padding: 10px auto !important; */
+    background-color: #dce7e7 !important;
+    /* padding: 2rem 2rem; */
+}
+
+.panel-heading {
+    background-color: #e0eeed !important;
+}
+
+.btn {
+    background-color: #e0eeed !important;
+    border: 0 none !important;
+    color: grey !important;
+}
+
+.btn:hover {
+    background-color: #edf3f3 !important;
+}
+
+
+/* Box shadow color */
+
+.btn,
+.form-control:focus {
+    border-color: #aad6d5 !important;
+    box-shadow: inset 0 1px 1px rgba(191, 218, 217, 0.075), 0 0 8px rgba(191, 218, 217, 0.6);
+}
+
+.headline {
+    font-size: 50px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    margin: auto;
+}
+
+::selection {
+    background: #fcffff;
+    /* WebKit/Blink Browsers */
+}
+
+ ::-moz-selection {
+    background: #fcffff;
+    /* Gecko Browsers */
+}
+
+.well {
+    background-color: #ffffff;
+}
