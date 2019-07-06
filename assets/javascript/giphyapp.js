@@ -28,7 +28,7 @@ function createBtns() {
                 var results = response.data;
 
                 for (var i = 0; i < results.length; i++) {
-                    var gifDiv = $("<div>").addClass("gifdiv");
+                    var gifDiv = $("<div>").addClass("gifdiv").addClass("grid-item");
 
                     var rating = results[i].rating;
 
@@ -113,3 +113,11 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+$('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    horizontalOrder: true,
+    percentPosition: true
+});
