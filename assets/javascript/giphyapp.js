@@ -16,6 +16,7 @@ function createBtns() {
 
 
     $(".castbtn").on("click", function() {
+        $(".showme").remove();
         var cast = $(this).text();
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + cast + "&api_key=PFnZ8BpKMtDwfFAok7htvGM3Engjb9HB&limit=10";
         console.log(cast);
@@ -45,8 +46,9 @@ function createBtns() {
                     });
 
 
-                    gifDiv.prepend(castImage);
+
                     gifDiv.prepend(p);
+                    gifDiv.prepend(castImage);
 
                     $("#results").prepend(gifDiv);
                 }
