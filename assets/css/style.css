@@ -2,6 +2,7 @@
     /* padding: 10px auto !important; */
     background-color: #dce7e7 !important;
     /* padding: 2rem 2rem; */
+    color: grey !important;
 }
 
 body {
@@ -46,10 +47,6 @@ body {
  ::-moz-selection {
     background: #fcffff;
     /* Gecko Browsers */
-}
-
-.well {
-    background-color: #ffffff;
 }
 
 
@@ -160,8 +157,8 @@ img {
     smaller than 640
     *************************************************************************************/
 
-
-/* @media screen and (max-width: 640px) {
-                .jumbotron {
-                    display: block !important;
-                } */
+@media screen and (max-width: 640px) {
+    .grid-item {
+        display: inline !important;
+    }
+}
